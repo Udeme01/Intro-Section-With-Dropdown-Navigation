@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- custom css -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <header class="header">
+    <!-- desktop nav -->
+    <nav class="nav-bar">
+      <ul class="collection">
+          <!-- SNAP LOGO -->
+        <li class="logo">
+          <a href="#" class="brand">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+        </li>
+
+        <!-- Hamburger Menu For Mobile -->
+        <li id="open_menu" aria-controls="overlay" aria-expanded="false">
+          <a href="#">
+            <img src="images/icon-menu.svg" alt="icon-menu">
+          </a>
+        </li>
+
+        <!-- mobile nav markUp -->
+        <div class="overlay" data-visible="false">
+          <div class="mobile-nav">
+
+            <!-- Hamburger Menu For mobile - Close Menu -->
+            <a href="#" id="close__menu" aria-controls="overlay" aria-expanded="false">
+              <img src="images/icon-close-menu.svg" alt="icon-close-menu">
+            </a>
+
+            <!-- mobile nav links -->
+            <ul class="mobile-links">
+
+              <!-- dropdown btn 1 -->
+              <li class="dropdown-btn arrow-DM">
+                <a href="#" id="arrowDown">
+                  Features
+                  <!-- <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> -->
+                  <picture>
+                    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down">
+                    <img src="images/icon-arrow-up.svg" alt="icon-arrow-up" class="icon-arrow-up">
+                  </picture>
+                </a>
+
+                <!-- dropdown links -->
+                <ul class="dropdown-links">
+
+                  <!-- todo link -->
+                  <li class="todo-link">
+                    <a href="#">
+                      <img src="images/icon-todo.svg" alt="icon-todo">
+                      <span>Todo List</span>
+                    </a>
+                  </li>
+
+                  <!-- calender link -->
+                  <li class="calender-link">
+                    <a href="#">
+                      <img src="images/icon-calendar.svg" alt="icon-calendar">
+                      <span>calender</span>
+                    </a>
+                  </li>
+
+                  <!-- Reminders Link -->
+                  <li class="reminders-link">
+                    <a href="#">
+                      <img src="images/icon-reminders.svg" alt="icon-reminders">
+                      <span>Reminders</span>
+                    </a>
+                  </li>
+
+                  <!-- Planning Link -->
+                  <li class="planning-link">
+                    <a href="#">
+                      <img src="images/icon-planning.svg" alt="icon-planning">
+                      <span>Planning</span>
+                    </a>
+                  </li>
+                </ul>
+                  <!-- end of dropdown links... -->
+              </li>
+
+              <!-- dropdown btn 2 -->
+              <li class="dropdown-btn arrow-DM">
+                <a href="#" id="arrowDown">
+                  Company
+                  <!-- <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> -->
+                  <picture>
+                    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down">
+                    <img src="images/icon-arrow-up.svg" alt="icon-arrow-up" class="icon-arrow-up">
+                  </picture>
+                </a>
+
+                <!-- dropdown links -->
+                <ul class="dropdown-links">
+
+                  <!-- history link -->
+                  <li class="todo-link">
+                    <a href="#">History</a>
+                  </li>
+
+                  <!-- our team link -->
+                  <li class="calender-link">
+                    <a href="#">Our Team</a>
+                  </li>
+
+                  <!-- Blog Link -->
+                  <li class="reminders-link">
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+                  <!-- end of dropdown links... -->
+              </li>
+
+              <!-- careers-->
+              <li class="career">
+                <a href="#">Careers</a>
+              </li>
+
+              <!-- About -->
+              <li class="about">
+                <a href="#">About</a>
+              </li>
+            </ul>
+
+            <!-- mobile login/register -->
+            <div class="btn_mobile">
+              <button class="btn-required login__signup">Login</button>
+              <button class="btn-required register__signup">Register</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- MAJOR FEATURES LINKS -->
+        <li class="parent parent-feature arrow-DM">
+          <a href="#" class="D-icon" id="arrowDown">Features
+            <picture>
+              <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down">
+            <img src="images/icon-arrow-up.svg" alt="icon-arrow-up" class="icon-arrow-up">
+            </picture>
+          </a>
+          <!-- MINI FEATURES LINK COLLECTION -->
+          <ul class="dropdown_collection">
+            
+            <!-- Todo -->
+            <li class="features__list-collection">
+              <a href="#">
+                <img src="images/icon-todo.svg" alt="icon-todo">
+                <span>Todo List</span>
+              </a>
+            </li>
+
+            <!-- Calender -->
+            <li class="features__list-collection">
+              <a href="#">
+                <img src="images/icon-calendar.svg" alt="icon-calendar">
+                <span>Calender</span>
+              </a>
+            </li>
+
+            <!-- Reminders -->
+            <li class="features__list-collection">
+              <a href="#">
+                <img src="images/icon-reminders.svg" alt="icon-reminders">
+                <span>Reminders</span>
+              </a>
+            </li>
+
+            <!-- Planning -->
+            <li class="features__list-collection">
+              <a href="#">
+                <img src="images/icon-planning.svg" alt="icon-planning">
+                <span>Planning</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- MAJOR COMPANY LINKS -->
+        <li class="parent parent-company arrow-DM">
+          <a href="#" class="D-icon" id="arrowDown">company
+            <!-- <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"> -->
+            <picture>
+              <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="icon-arrow-down">
+              <img src="images/icon-arrow-up.svg" alt="icon-arrow-up" class="icon-arrow-up">
+            </picture>
+          </a>
+          <!-- MINI COMPANY LINK COLLECTION -->
+          <ul class="dropdown_collection">
+            
+            <!-- History -->
+            <li class="company__list-collection">
+              <a href="#">History</a>
+            </li>
+
+            <!-- Our Team -->
+            <li class="company__list-collection">
+              <a href="#">Our Team</a>
+            </li>
+
+            <!-- Blog -->
+            <li class="company__list-collection">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </li>
+
+          <!-- careers -->
+        <li class="careers">
+          <a href="#">Careers</a>
+        </li>
+
+        <!-- About -->
+        <li class="About">
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <!-- LOGIN/REGISTER -->
+      <div class="btn_signup-wrapper">
+        <button class="btn-required login__signup">Login</button>
+        <button class="btn-required register__signup">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main section -->
+  <main class="main__section">
+
+    <!-- grouped section -->
+    <section class="group">
+      <section class="remote-team__section">
+        <h1 class="remote-work__section">
+          Make <span>remote work</span>
+        </h1>
+        <p class="remote-graph__section">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn btn-dark">
+          Learn more
+        </button>
+
+        <!-- footer -->
+        <footer>
+          <span>
+            <img src="images/client-databiz.svg" alt="client-databiz">
+          </span>
+    
+          <span>
+            <img src="images/client-audiophile.svg" alt="client-audiophile">
+          </span>
+    
+          <span>
+            <img src="images/client-meet.svg" alt="client-meet">
+          </span>
+    
+          <span>
+            <img src="images/client-maker.svg" alt="client-maker">
+          </span>
+        </footer>
+      </section>
+  
+      <!-- image section -->
+      <section class="hero-image__section">
+        <picture>
+          <source srcset="images/image-hero-mobile.png" media="(max-width:1030px)">
+          <img src="images/image-hero-desktop.png" alt="image-hero-desktop">
+        </picture>
+      </section>
+    </section>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="nav.js"></script>
+</body>
+</html>
