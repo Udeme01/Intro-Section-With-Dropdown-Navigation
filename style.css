@@ -486,6 +486,11 @@
       overflow: auto;
       width: 50%;
       margin: 0 auto;
+      overflow: auto;
+    }
+
+    .mobile-nav::-webkit-scrollbar {
+      display: none;
     }
 
     .mobile-nav > a img {
